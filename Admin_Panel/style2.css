@@ -1,0 +1,126 @@
+body{
+    background-color: #222d32 !important;
+   color: #0db8de;
+}
+
+.table thead th{
+    color: #fff;
+    background-color: #0db8de;
+    border-bottom: 2px solid #0db8de;
+    text-align: center;
+}
+
+.table tbody td{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    padding: 5px;
+}
+
+.addcat a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_active{
+    background: rgb(80, 206, 80);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn_active a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_deactive{
+    background: rgb(167, 80, 238);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn_deactive a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_delete{
+    background: rgb(238, 80, 80);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn_delete a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn_edit{
+    background: rgb(80, 161, 238);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn_edit a{
+    text-decoration: none;
+    color: white;
+}
+
+.select_option{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.img_product_size{
+    width: 100px !important;
+    height: 80px !important;
+}
+
+:root{
+    --offcanvas-width: 270px;
+    --topNavbarHeight: 56px;
+}
+
+.sidebar-nav{
+    width: var(--offcanvas-width);
+}
+
+.navbar .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent !important;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+
+@media (min-width:992px){
+
+    body{
+        overflow: auto !important;
+    }
+
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+    .sidebar-nav {
+        transform: none;
+        visibility: visible !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% -var(--topNavbarHeight));
+    }
+
+    main{
+        margin-left: var(--offcanvas-width);
+    }
+}
